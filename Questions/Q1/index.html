@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Given a string, reerse ecah word in this sentence</h1>
+
+</body>
+
+<script>
+
+    let str = "Hello World";
+
+    let ans = str.split(" ").map( (word) => {
+            return word.split("").reverse().join("")
+        }   
+    )
+
+    console.log(ans.join(" "))
+
+</script>
+</html>

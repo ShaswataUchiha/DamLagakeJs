@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Write a js function to get the nuumbr of ocurance of eah letter 
+        in specific string
+    </h1>
+
+    <!-- 
+        india
+
+        i - 2
+        n - 1
+        d - 1
+        a - 1
+     -->
+</body>
+<script>
+    function numberOfOcurance(str){
+        let emptyObject = {}
+
+        str.split("").forEach( (elem) => {
+            if(emptyObject.hasOwnProperty(elem) === false){
+                emptyObject[elem] = 1
+            }
+            else{
+                emptyObject[elem]++
+            }
+        })
+
+        return emptyObject
+    }
+
+    console.log(numberOfOcurance("india"))
+    console.log(numberOfOcurance("shaswata"))
+    console.log(numberOfOcurance("devlopment"))
+</script>
+</html>

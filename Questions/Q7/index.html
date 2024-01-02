@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Checked the string is palindrome or not 
+        Ex-[Lool, poop]
+    </h1>
+</body>
+
+<script>
+
+    function checkString(str){
+        var reverse = str.split("").reverse().join("")
+
+        if(reverse === str){
+            return true
+        }
+        else{
+            return false
+        }
+    }
+
+    let ans = checkString("lool")
+    if(ans == true){
+        console.log("Palindrome string")
+    }
+    else{
+        console.log("Not a palndrome strng")
+    }
+</script>
+</html>
