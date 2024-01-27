@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Delete elements from arry where gender is non male.
+        !!! Dont retrn new array
+    </h1>
+</body>
+<script>
+    let arr = [
+        { name : "Shaswata", gender : "male"},
+        { name : "Puja", gender : "female"},
+        { name : "Akash", gender : "male"},
+        { name : "Neha", gender : "female"},
+        { name : "Mitali", gender : "female"}
+    ]
+
+    let count=0;
+
+    arr.forEach( (elem) => {
+        if(elem.gender !== "male"){
+            count++
+        }
+    })
+
+    for(let i=1; i<=count; i++){
+        for(let j=0; j<arr.length; j++){
+            if(arr[j].gender !== "male"){
+                arr.splice(j, 1)
+            }
+        }
+    }
+
+    console.log(arr)
+
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        add numbers that available in array;
+    </h1>
+</body>
+
+<script>
+    let arr = ["abc", "def", 1, 2, 3, "ghi"];
+    let sum=0;
+
+    arr.forEach( (elem) => {
+        if(typeof elem === "number"){
+            sum += elem;
+        }
+    })
+
+    console.log(sum)
+</script>
+</html>
